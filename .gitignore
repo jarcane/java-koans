@@ -11,3 +11,5 @@ koans/data*
 koans/app/data
 lib/file-compiler/bin
 koans/app/config/file_hashes.dat
+
+koans/src/.idea/*

@@ -13,7 +13,7 @@ public class AboutObjects {
 
 	@Koan
 	public void newObjectInstancesCanBeCreatedDirectly() {
-		assertEquals(new Object() instanceof Object, __);
+		assertEquals(new Object() instanceof Object, true);
 	}
 
 	@Koan
@@ -21,8 +21,8 @@ public class AboutObjects {
 		class Foo {}
 
 		Class<?>[] ancestors = getAncestors(new Foo());
-		assertEquals(ancestors[0], __);
-		assertEquals(ancestors[1], __);
+		assertEquals(ancestors[0], Foo.class);
+		assertEquals(ancestors[1], Object.class);
 	}
 
 	@Koan
